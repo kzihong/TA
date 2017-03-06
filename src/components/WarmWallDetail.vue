@@ -98,7 +98,7 @@
 	
 </style>
 <script>
-	import "../assets/css/warm-wall-detail.css"
+	import "../assets/css/warm_wall_detail.css"
 	export default{
 
 	}

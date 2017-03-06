@@ -124,7 +124,7 @@
 	
 </style>
 <script>
-	import "../assets/css/warm-wall.css"
+	import "../assets/css/warm_wall.css"
 
 	export default{
 		mounted(){

@@ -108,7 +108,7 @@
 </style>
 <script>
 import "../assets/css/timeline.css"
-import "../assets/css/main.css"
+import "../assets/css/diary_main.css"
 
 
 export default {
