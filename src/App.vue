@@ -32,5 +32,8 @@ export default {
 </script>
 
 <style>
-
+#app{
+  /*解决页面内容没有时产生布局问题*/
+  width: 100%;
+}
 </style>

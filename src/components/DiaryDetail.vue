@@ -13,57 +13,48 @@
 		                <div class="weui-grids">
 		                    <a href="javascript:;" class="weui-grid">
 		                        <div class="weui-grid__icon">
-		                            <img src="/src/assets/images/icon_tabbar.png" alt="">
+		                            <img src="../assets/images/pic_160.png" alt="">
 		                        </div>
-		                        <p class="weui-grid__label">Grid</p>
 		                    </a>
 		                    <a href="javascript:;" class="weui-grid">
 		                        <div class="weui-grid__icon">
-		                            <img src="/src/assets/images/icon_tabbar.png" alt="">
+		                            <img src="../assets/images/pic_160.png" alt="">
 		                        </div>
-		                        <p class="weui-grid__label">Grid</p>
 		                    </a>
 		                    <a href="javascript:;" class="weui-grid">
 		                        <div class="weui-grid__icon">
-		                            <img src="/src/assets/images/icon_tabbar.png" alt="">
+		                            <img src="../assets/images/pic_160.png" alt="">
 		                        </div>
-		                        <p class="weui-grid__label">Grid</p>
 		                    </a>
 		                    <a href="javascript:;" class="weui-grid">
 		                        <div class="weui-grid__icon">
-		                            <img src="/src/assets/images/icon_tabbar.png" alt="">
+		                            <img src="../assets/images/pic_160.png" alt="">
 		                        </div>
-		                        <p class="weui-grid__label">Grid</p>
 		                    </a>
 		                    <a href="javascript:;" class="weui-grid">
 		                        <div class="weui-grid__icon">
-		                            <img src="/src/assets/images/icon_tabbar.png" alt="">
+		                            <img src="../assets/images/pic_160.png" alt="">
 		                        </div>
-		                        <p class="weui-grid__label">Grid</p>
 		                    </a>
 		                    <a href="javascript:;" class="weui-grid">
 		                        <div class="weui-grid__icon">
-		                            <img src="/src/assets/images/icon_tabbar.png" alt="">
+		                            <img src="../assets/images/pic_160.png" alt="">
 		                        </div>
-		                        <p class="weui-grid__label">Grid</p>
 		                    </a>
 		                    <a href="javascript:;" class="weui-grid">
 		                        <div class="weui-grid__icon">
-		                            <img src="/src/assets/images/icon_tabbar.png" alt="">
+		                            <img src="../assets/images/pic_160.png" alt="">
 		                        </div>
-		                        <p class="weui-grid__label">Grid</p>
 		                    </a>
 		                    <a href="javascript:;" class="weui-grid">
 		                        <div class="weui-grid__icon">
-		                            <img src="/src/assets/images/icon_tabbar.png" alt="">
+		                            <img src="../assets/images/pic_160.png" alt="">
 		                        </div>
-		                        <p class="weui-grid__label">Grid</p>
 		                    </a>
 		                    <a href="javascript:;" class="weui-grid">
 		                        <div class="weui-grid__icon">
-		                            <img src="/src/assets/images/icon_tabbar.png" alt="">
+		                            <img src="../assets/images/pic_160.png" alt="">
 		                        </div>
-		                        <p class="weui-grid__label">Grid</p>
 		                    </a>
 		                </div>
 		            </div>
@@ -72,7 +63,7 @@
 		        
 		        <div class="weui-footer">
 		            <p class="weui-footer__text" style="text-align:left">
-		                2017年1月9日&nbsp;22:55
+		                <span>2017年1月9日&nbsp;22:55</span>
 		                <a href="#" class="remove">删除</a>
 		            </p>
 		        </div>
@@ -81,15 +72,53 @@
 		</div>
 		<!--日记详情 end-->
 
+		<div class="weui-gallery">
+			<span class="weui-gallery__img" :style="bgStyle"></span>
+			<div class="weui-gallery__opr">
+				<a href="javascript:;" class="weui-gallery__del">
+					<i class="weui-icon-delete weui-icon_gallery-delete"></i>
+				</a>
+			</div>
+		</div>
 
 	</div>
 </template>
-<style scoped>
 
+<style scoped>
+	.remove{
+		margin-left: 1em;
+	}
+	.weui-grid__icon{
+		width: 100%;
+		height: 100%;
+	}
 </style>
+
+
 <script>
 	import "../assets/css/diary_main.css"	
-	export default{
+	export default {
+		data(){
+			return {
+				bgStyle:'background-image:url(../assets/images/pic_160.png)'
+			}
+		},
+		mounted() {
+			// 使用_vue保存vue对象
+			let _vue = this;
+			let $gallery = $('.weui-gallery');
+			let $galleryImg = $('.weui-gallery__img').eq(0);
+			// 图片展示廊显示
+			$('.weui-grid').click(function (){
+				let $imgsrc = $(this).find('img').attr('src');
+				$gallery.show();
+				_vue.bgStyle = `background-image:url(${$imgsrc})`;
 
+			})
+			// 图片展示廊隐藏
+			$gallery.click(function (){
+				$(this).hide()
+			})
+		}
 	}
 </script>

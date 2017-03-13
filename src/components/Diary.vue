@@ -10,12 +10,14 @@
 					<img src="../assets/images/cd-icon-picture.svg" alt="Picture">
 				</div><!-- cd-timeline-img -->
 
-				<div class="cd-timeline-content">
-					<h2>JS代码网 1</h2>
-					<p>JS代码网专注分享js代码和CSS样式，拥有史上最全的JS代码和jQuery特效,jQuery插件,同时还提供网站模板,还与大家分享知名WEB前端的开源项目</p>
-					<a href="" class="cd-read-more">阅读更多</a>
-					<span class="cd-date">Jan 14</span>
-				</div> <!-- cd-timeline-content -->
+				<router-link to="/diary/detail">
+					<div class="cd-timeline-content">
+						<h2>JS代码网 1</h2>
+						<p>JS代码网专注分享js代码和CSS样式，拥有史上最全的JS代码和jQuery特效,jQuery插件,同时还提供网站模板,还与大家分享知名WEB前端的开源项目</p>
+						<!--<a href="" class="cd-read-more">阅读更多</a>-->
+						<span class="cd-date">Jan 14</span>
+					</div> <!-- cd-timeline-content -->
+				</router-link>
 			</div> <!-- cd-timeline-block -->
 
 			<div class="cd-timeline-block">
@@ -23,12 +25,14 @@
 					<img src="../assets/images/cd-icon-movie.svg" alt="Movie">
 				</div> <!-- cd-timeline-img -->
 
-				<div class="cd-timeline-content">
-					<h2>JS代码网 2</h2>
-					<p>JS代码网专注分享js代码和CSS样式，拥有史上最全的JS代码和jQuery特效,jQuery插件,同时还提供网站模板,还与大家分享知名WEB前端的开源项目</p>
-					<a href="" class="cd-read-more">阅读更多</a>
-					<span class="cd-date">Jan 18</span>
-				</div> <!-- cd-timeline-content -->
+				<router-link to="/diary/detail">
+					<div class="cd-timeline-content">
+						<h2>JS代码网 2</h2>
+						<p>JS代码网专注分享js代码和CSS样式，拥有史上最全的JS代码和jQuery特效,jQuery插件,同时还提供网站模板,还与大家分享知名WEB前端的开源项目</p>
+						<!--<a href="" class="cd-read-more">阅读更多</a>-->
+						<span class="cd-date">Jan 18</span>
+					</div> <!-- cd-timeline-content -->
+				</router-link>
 			</div> <!-- cd-timeline-block -->
 
 			<div class="cd-timeline-block">
@@ -36,12 +40,14 @@
 					<img src="../assets/images/cd-icon-picture.svg" alt="Picture">
 				</div> <!-- cd-timeline-img -->
 
-				<div class="cd-timeline-content">
-					<h2>JS代码网 3</h2>
-					<p>JS代码网专注分享js代码和CSS样式，拥有史上最全的JS代码和jQuery特效,jQuery插件,同时还提供网站模板,还与大家分享知名WEB前端的开源项目</p>
-					<a href="" class="cd-read-more">阅读更多</a>
-					<span class="cd-date">Jan 24</span>
-				</div> <!-- cd-timeline-content -->
+				<router-link to="/diary/detail">
+					<div class="cd-timeline-content">
+						<h2>JS代码网 3</h2>
+						<p>JS代码网专注分享js代码和CSS样式，拥有史上最全的JS代码和jQuery特效,jQuery插件,同时还提供网站模板,还与大家分享知名WEB前端的开源项目</p>
+						<!--<a href="" class="cd-read-more">阅读更多</a>-->
+						<span class="cd-date">Jan 24</span>
+					</div> <!-- cd-timeline-content -->
+				</router-link>
 			</div> <!-- cd-timeline-block -->
 
 			<div class="cd-timeline-block">
@@ -49,12 +55,14 @@
 					<img src="../assets/images/cd-icon-location.svg" alt="Location">
 				</div> <!-- cd-timeline-img -->
 
-				<div class="cd-timeline-content">
-					<h2>JS代码网 4</h2>
-					<p>JS代码网专注分享js代码和CSS样式，拥有史上最全的JS代码和jQuery特效,jQuery插件,同时还提供网站模板,还与大家分享知名WEB前端的开源项目</p>
-					<a href="" class="cd-read-more">阅读更多</a>
-					<span class="cd-date">Feb 14</span>
-				</div> <!-- cd-timeline-content -->
+				<router-link to="/diary/detail">
+					<div class="cd-timeline-content">
+						<h2>JS代码网 4</h2>
+						<p>JS代码网专注分享js代码和CSS样式，拥有史上最全的JS代码和jQuery特效,jQuery插件,同时还提供网站模板,还与大家分享知名WEB前端的开源项目</p>
+						<!--<a href="" class="cd-read-more">阅读更多</a>-->
+						<span class="cd-date">Feb 14</span>
+					</div> <!-- cd-timeline-content -->
+				</router-link>
 			</div> <!-- cd-timeline-block -->
 
 			<div class="cd-timeline-block">
@@ -62,12 +70,14 @@
 					<img src="../assets/images/cd-icon-location.svg" alt="Location">
 				</div> <!-- cd-timeline-img -->
 
-				<div class="cd-timeline-content">
-					<h2>JS代码网 5</h2>
-					<p>JS代码网专注分享js代码和CSS样式，拥有史上最全的JS代码和jQuery特效,jQuery插件,同时还提供网站模板,还与大家分享知名WEB前端的开源项目</p>
-					<a href="" class="cd-read-more">阅读更多</a>
-					<span class="cd-date">Feb 18</span>
-				</div> <!-- cd-timeline-content -->
+				<router-link to="/diary/detail">
+					<div class="cd-timeline-content">
+						<h2>JS代码网 5</h2>
+						<p>JS代码网专注分享js代码和CSS样式，拥有史上最全的JS代码和jQuery特效,jQuery插件,同时还提供网站模板,还与大家分享知名WEB前端的开源项目</p>
+						<!--<a href="" class="cd-read-more">阅读更多</a>-->
+						<span class="cd-date">Feb 18</span>
+					</div> <!-- cd-timeline-content -->
+				</router-link>
 			</div> <!-- cd-timeline-block -->
 
 			<div class="cd-timeline-block">
@@ -75,12 +85,14 @@
 					<img src="../assets/images/cd-icon-movie.svg" alt="Movie">
 				</div> <!-- cd-timeline-img -->
 
-				<div class="cd-timeline-content">
-					<h2>JS代码网 6</h2>
-					<p>JS代码网专注分享js代码和CSS样式，拥有史上最全的JS代码和jQuery特效,jQuery插件,同时还提供网站模板,还与大家分享知名WEB前端的开源项目</p>
-	                <a href="" class="cd-read-more">阅读更多</a>
-					<span class="cd-date">Feb 26</span>
-				</div> <!-- cd-timeline-content -->
+				<router-link to="/diary/detail">
+					<div class="cd-timeline-content">
+						<h2>JS代码网 6</h2>
+						<p>JS代码网专注分享js代码和CSS样式，拥有史上最全的JS代码和jQuery特效,jQuery插件,同时还提供网站模板,还与大家分享知名WEB前端的开源项目</p>
+						<!--<a href="" class="cd-read-more">阅读更多</a>-->
+						<span class="cd-date">Feb 26</span>
+					</div> <!-- cd-timeline-content -->
+				</router-link>
 			</div> <!-- cd-timeline-block -->
 		</section> <!-- cd-timeline -->
 	    <!--时间轴 end-->
