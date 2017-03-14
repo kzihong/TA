@@ -103,10 +103,10 @@
 	        <div class="info-nr">
 	            <div id="info-nr-phone" class="info-nr-phone color-orange">
 	            <input id="info-nr-btn" type="checkbox" name="" value="" class="info-nr-menu">
-	            <div> <a href="http://www.jq-school.com/" class="icon-phone"></a> </div>
-	            <div> <a href="http://www.jq-school.com/" class="icon-location"></a> </div>
-	            <div> <a href="http://www.jq-school.com/" class="icon-message"></a> </div>
-	            <div> <a href="http://www.jq-school.com/" class="icon-share"></a> </div>
+	            <div> <router-link to="/diary/release" class="icon-edit" title="写日记"></router-link> </div>
+	            <div> <router-link to="http://www.jq-school.com/" class="icon-location"></router-link> </div>
+	            <div> <router-link to="http://www.jq-school.com/" class="icon-message"></router-link> </div>
+	            <div> <router-link to="http://www.jq-school.com/" class="icon-share"></router-link> </div>
 	            </div>
 	        </div>
 	    </section>

@@ -64,7 +64,7 @@
 		        <div class="weui-footer">
 		            <p class="weui-footer__text" style="text-align:left">
 		                <span>2017年1月9日&nbsp;22:55</span>
-		                <a href="#" class="remove">删除</a>
+		                <a href="javascript:;" class="remove">删除</a>
 		            </p>
 		        </div>
 		    </div>
@@ -72,6 +72,7 @@
 		</div>
 		<!--日记详情 end-->
 
+		<!--gallery-->
 		<div class="weui-gallery">
 			<span class="weui-gallery__img" :style="bgStyle"></span>
 			<div class="weui-gallery__opr">
@@ -80,6 +81,21 @@
 				</a>
 			</div>
 		</div>
+		<!--gallery end-->
+
+		<!--dailog-->
+		<div id="dialog1" style="display: none;">
+			<div class="weui-mask"></div>
+			<div class="weui-dialog">
+				<div class="weui-dialog__hd"><strong class="weui-dialog__title">删除提示</strong></div>
+				<div class="weui-dialog__bd">删除该日记？删除后不可恢复，请慎重选择！！！</div>
+				<div class="weui-dialog__ft">
+					<a id="dialog__submit" href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">确定</a>
+					<a id="dialog__cancel" href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">取消</a>
+				</div>
+			</div>
+		</div>
+		<!--dailog end-->
 
 	</div>
 </template>
@@ -118,6 +134,19 @@
 			// 图片展示廊隐藏
 			$gallery.click(function (){
 				$(this).hide()
+			})
+
+			$('.remove').click(function (){
+				$('#dialog1').css('display','block');
+			})
+
+			$('#dialog1').click(function (ev){
+				if(ev.target && ev.target.id !== 'dialog__submit'){
+					$(this).css('display','none')
+				}
+				if(ev.target && ev.target.id === 'dialog__submit'){
+					// code here...
+				}
 			})
 		}
 	}
